@@ -1,16 +1,23 @@
-<announcement-bar
-  class="
-    group-block block page-width
-    group-block--{{ section.id }}
-    color-{{ section.settings.color_scheme }}
-  "
-  style="
-    --pt:{{ section.settings.padding_top }}px;
-    --pb:{{ section.settings.padding_bottom }}px;
-  "
->
-  {% content_for 'blocks' %}
-</announcement-bar>
+{%- assign _show_announcement_bar = true -%}
+{%- if settings.wholesale_gate_enabled and settings.wholesale_hide_announcement_bar and customer and customer.tags contains settings.wholesale_customer_tag -%}
+  {%- assign _show_announcement_bar = false -%}
+{%- endif -%}
+
+{%- if _show_announcement_bar -%}
+  <announcement-bar
+    class="
+      group-block block page-width
+      group-block--{{ section.id }}
+      color-{{ section.settings.color_scheme }}
+    "
+    style="
+      --pt:{{ section.settings.padding_top }}px;
+      --pb:{{ section.settings.padding_bottom }}px;
+    "
+  >
+    {% content_for 'blocks' %}
+  </announcement-bar>
+{%- endif -%}
 
 {% schema %}
 {

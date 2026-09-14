@@ -365,6 +365,17 @@
       "label": "Hide 'You may also like' in cart drawer for wholesale customers",
       "default": true,
       "info": "When enabled, the product recommendation carousel in the cart drawer is hidden for wholesale customers."
+    },
+    {
+      "type": "header",
+      "content": "Header"
+    },
+    {
+      "type": "checkbox",
+      "id": "wholesale_hide_announcement_bar",
+      "label": "Hide announcement bar for wholesale customers",
+      "default": true,
+      "info": "When enabled, the announcement bar is not rendered for logged-in wholesale customers (DTC visitors and guests still see it)."
     }
   ]
 },
