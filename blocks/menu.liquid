@@ -1,6 +1,15 @@
 {% liquid
   assign bl_stts = block.settings
   assign menu = bl_stts.menu
+
+  assign is_wholesale_customer = false
+  if settings.wholesale_gate_enabled and customer and customer.tags contains settings.wholesale_customer_tag
+    assign is_wholesale_customer = true
+  endif
+  if is_wholesale_customer and bl_stts.wholesale_menu != blank
+    assign menu = bl_stts.wholesale_menu
+  endif
+
   assign heading = bl_stts.heading
   assign color_scheme = bl_stts.color_scheme
   assign show_as_accordion = bl_stts.show_as_accordion
@@ -124,6 +133,12 @@
       "id": "menu",
       "label": "t:settings.menu",
       "default": "main-menu"
+    },
+    {
+      "type": "link_list",
+      "id": "wholesale_menu",
+      "label": "Wholesale menu (optional)",
+      "info": "Shown instead of the menu above to logged-in wholesale customers. Leave blank to show the same menu to everyone."
     },
     {
       "type": "text",
