@@ -911,6 +911,7 @@
                   "name": "Menu",
                   "settings": {
                     "menu": "1o8-shop",
+                    "wholesale_menu": "",
                     "heading": "Shop",
                     "margin-block-end": 10,
                     "content_direction": "column",
@@ -1039,6 +1040,7 @@
                   "name": "Menu",
                   "settings": {
                     "menu": "108-learn-copy",
+                    "wholesale_menu": "",
                     "heading": "Learn",
                     "margin-block-end": 10,
                     "content_direction": "column",
@@ -1167,6 +1169,7 @@
                   "name": "Menu",
                   "settings": {
                     "menu": "1o8-support-copy",
+                    "wholesale_menu": "1o8-support",
                     "heading": "Support",
                     "margin-block-end": 10,
                     "content_direction": "column",
@@ -1295,6 +1298,7 @@
                   "name": "Menu",
                   "settings": {
                     "menu": "108-company",
+                    "wholesale_menu": "",
                     "heading": "Company",
                     "margin-block-end": 10,
                     "content_direction": "column",
