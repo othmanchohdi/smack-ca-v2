@@ -60,7 +60,16 @@
                 class="details__summary header__menu-item link link--text list-menu__item link--hover-underline focus-inset caption-large mega-menu__link--level-3 {{ class_item_hover_reveal }}{% render 'highlight-class', order: '2', keys: keys, compare: childlink.title, settings: sec_settings %}"
                 style="{%  render 'highlight-style', order: '2', keys: keys, compare: childlink.title, color: highlight_color, settings: sec_settings %}"
               >
-                {{ childlink.title | escape }}
+                <a
+                  {% if childlink.url != blank %}
+                    href="{{ childlink.url }}"
+                  {% else %}
+                    role="link" aria-disabled="true"
+                  {% endif %}
+                  {% if childlink.current %}
+                    aria-current="page"
+                  {% endif %}
+                >{{ childlink.title | escape }}</a>
                 {% if icon_type == 'caret' %}
                   <span class="svg-wrapper">
                     {{- 'icon-caret.svg' | inline_asset_content -}}
