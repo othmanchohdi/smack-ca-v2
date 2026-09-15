@@ -46,8 +46,42 @@
 
     document.documentElement.setAttribute('data-hero-v1', variant);
 
+    try {
+      if (!sessionStorage.getItem('ab_hero_v1_stamped')) {
+        fetch('/cart/update.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            attributes: { 'AB Hero Test': 'hero-v1:' + variant }
+          })
+        }).then(function () {
+          sessionStorage.setItem('ab_hero_v1_stamped', '1');
+        });
+      }
+    } catch (e) {}
+
+    var GA4_ID = 'G-24YDPETTLV';
+
+    function ga4(name, params) {
+      try {
+        if (typeof window.gtag !== 'function') {
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function () { window.dataLayer.push(arguments); };
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
+          document.head.appendChild(s);
+          window.gtag('js', new Date());
+          window.gtag('config', GA4_ID, { send_page_view: false });
+        }
+        window.gtag('event', name, params);
+      } catch (e) {}
+    }
+
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({ event: 'ab_assign', ab_test: TEST, ab_variant: variant });
+    ga4('ab_assign', { ab_variant: variant, ab_test: TEST });
+    window.gtag('set', 'user_properties', { ab_variant_user: variant });
 
     document.addEventListener('click', function (event) {
       var target = event.target.closest('a, button');
@@ -62,6 +96,7 @@
         ab_variant: variant,
         ab_label: label
       });
+      ga4('ab_hero_click', { ab_variant: variant, ab_test: TEST, ab_label: label });
     });
   })();
 </script>
