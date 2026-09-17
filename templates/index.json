@@ -2883,7 +2883,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h3>Made in the Canada</h3>",
+                    "text": "<h3>Made in Canada</h3>",
                     "collection_description_only": false,
                     "collapse_text": false,
                     "typing_text": false,
@@ -3710,7 +3710,7 @@
                 "custom_width_tablet": 100,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
-                "collection": "best-sellers",
+                "collection": "shop-all",
                 "products_to_show": 12,
                 "columns_desktop": 4,
                 "columns_desktop_carousel": 3,
