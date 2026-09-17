@@ -241,13 +241,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "14339172867238703359": {
-        "type": "shopify://apps/yotpo-product-reviews/blocks/reviews_tab/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-        "disabled": false,
-        "settings": {
-          "product": ""
-        }
-      },
       "2640576625794464016": {
         "type": "shopify://apps/yotpo-loyalty-rewards/blocks/spotlight-drawer-app-embed/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
         "disabled": true,
@@ -297,7 +290,7 @@
         "settings": {}
       },
       "7570552984445421165": {
-        "type": "shopify://apps/yotpo-product-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "type": "shopify://apps/yotpo-product-photo-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
         "disabled": false,
         "settings": {}
       },
@@ -356,6 +349,16 @@
       },
       "17824471530847535147": {
         "type": "shopify://apps/accessibe-widget/blocks/accessiBe/149b77a2-0170-42f6-9355-0bef39587b09",
+        "disabled": false,
+        "settings": {}
+      },
+      "5149645339031002760": {
+        "type": "shopify://apps/order-limits-minmaxify/blocks/app-embed-block/3acfba32-89f3-4377-ae20-cbb9abc48475",
+        "disabled": false,
+        "settings": {}
+      },
+      "5674012996228588682": {
+        "type": "shopify://apps/cartbot/blocks/cartbot-script-append/f7a44e3b-3901-4412-9d5a-3db0980a9db0",
         "disabled": false,
         "settings": {}
       }
