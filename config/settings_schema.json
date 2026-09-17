@@ -92,6 +92,12 @@
       "info": "The Shopify customer tag that identifies wholesale buyers"
     },
     {
+      "type": "text",
+      "id": "wholesale_customer_tag_2",
+      "label": "Wholesale customer tag (secondary)",
+      "info": "Optional second Shopify customer tag treated identically to the tag above (e.g. a second wholesale program). Leave blank if not needed."
+    },
+    {
       "type": "url",
       "id": "wholesale_redirect_url",
       "label": "Redirect non-wholesale customers to",

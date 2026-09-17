@@ -40,7 +40,7 @@
     {% liquid
       assign limit = settings.quick_products_to_show | default: 9
       assign _ps_is_wholesale = false
-      if settings.wholesale_gate_enabled and customer and customer.tags contains settings.wholesale_customer_tag
+      if settings.wholesale_gate_enabled and customer and (customer.tags contains settings.wholesale_customer_tag or (settings.wholesale_customer_tag_2 != blank and customer.tags contains settings.wholesale_customer_tag_2))
         assign _ps_is_wholesale = true
       endif
     %}

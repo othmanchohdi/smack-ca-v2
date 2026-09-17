@@ -1,6 +1,6 @@
 {%- liquid
   assign _slideshow_is_wholesale_customer = false
-  if settings.wholesale_gate_enabled and customer and customer.tags contains settings.wholesale_customer_tag
+  if settings.wholesale_gate_enabled and customer and (customer.tags contains settings.wholesale_customer_tag or (settings.wholesale_customer_tag_2 != blank and customer.tags contains settings.wholesale_customer_tag_2))
     assign _slideshow_is_wholesale_customer = true
   endif
 -%}

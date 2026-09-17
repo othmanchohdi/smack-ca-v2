@@ -14,6 +14,8 @@
     "favicon": "shopify://shop_images/Favicon.webp",
     "wholesale_redirect_url": "shopify://collections/wholesale-catalogue-order",
     "wholesale_gate_home_enabled": true,
+    "wholesale_customer_tag": "W1",
+    "wholesale_customer_tag_2": "BB",
     "wholesale_product_tag": "W1",
     "wholesale_gated_col_1": "super-food-for-cats-w1",
     "wholesale_gated_col_2": "super-food-for-dogs-w1",
