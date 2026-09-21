@@ -2090,7 +2090,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Made with nutrient-rich ingredients  like blueberries, cranberries, spinach, and kelp.</p>",
+                        "text": "<p>Made with nutrient-rich ingredients like blueberries, cranberries, spinach, and kelp.</p>",
                         "collection_description_only": false,
                         "collapse_text": false,
                         "typing_text": false,
@@ -5309,14 +5309,6 @@
         "padding-inline-start": 0,
         "padding-inline-end": 0
       }
-    },
-    "shogun-below": {
-      "type": "shogun-below",
-      "settings": {}
-    },
-    "shogun-optimizer": {
-      "type": "shogun-optimizer",
-      "settings": {}
     }
   },
   "order": [
@@ -5327,8 +5319,6 @@
     "slideshow_9tWNFb",
     "featured_collection_U74pBC",
     "section_Hf3wyg",
-    "section_ykyXBc",
-    "shogun-below",
-    "shogun-optimizer"
+    "section_ykyXBc"
   ]
 }
