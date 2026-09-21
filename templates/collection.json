@@ -9,15 +9,6 @@
  */
 {
   "sections": {
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "settings": {}
-    },
-    "shogun-above": {
-      "type": "shogun-above",
-      "disabled": true,
-      "settings": {}
-    },
     "banner": {
       "type": "main-collection-banner",
       "blocks": {
@@ -5312,8 +5303,6 @@
     }
   },
   "order": [
-    "shogun-helper",
-    "shogun-above",
     "banner",
     "product-grid",
     "slideshow_9tWNFb",
