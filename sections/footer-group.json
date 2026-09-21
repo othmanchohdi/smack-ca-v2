@@ -24,8 +24,7 @@
             "container": "page-width",
             "height": "fit",
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/sign-up.png",
-            "image_mb_1": "shopify://shop_images/sign-up-mobile.png",
+            "image_1": "shopify://shop_images/sign-up.webp",
             "ab_test_enabled": false,
             "inherit_color_scheme": true,
             "scheme_background": "#ffffff",
@@ -691,7 +690,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Logo_1.png",
+                    "image": "shopify://shop_images/Logo_1.webp",
                     "link": "",
                     "hide_on_mobile": false,
                     "hide_on_desktop": false,
@@ -910,7 +909,7 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "menu": "1o8-shop",
+                    "menu": "",
                     "wholesale_menu": "",
                     "heading": "Shop",
                     "margin-block-end": 10,
@@ -1039,7 +1038,7 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "menu": "108-learn-copy",
+                    "menu": "",
                     "wholesale_menu": "",
                     "heading": "Learn",
                     "margin-block-end": 10,
@@ -1168,8 +1167,8 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "menu": "1o8-support-copy",
-                    "wholesale_menu": "1o8-support",
+                    "menu": "",
+                    "wholesale_menu": "",
                     "heading": "Support",
                     "margin-block-end": 10,
                     "content_direction": "column",
@@ -1297,7 +1296,7 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "menu": "108-company",
+                    "menu": "",
                     "wholesale_menu": "",
                     "heading": "Company",
                     "margin-block-end": 10,
