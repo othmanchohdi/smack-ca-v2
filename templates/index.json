@@ -2970,7 +2970,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Family-owned and operated, we make the world's best pet food right here in the US.</p>",
+                    "text": "<p>Family-owned and operated, we make the world's best pet food right here in Winnipeg, Manitoba.</p>",
                     "collection_description_only": false,
                     "collapse_text": false,
                     "typing_text": false,
