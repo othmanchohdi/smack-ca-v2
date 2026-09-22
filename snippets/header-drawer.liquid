@@ -59,24 +59,30 @@
           <nav class="menu-drawer__navigation">
             {%- comment -%} Wholesale navigation swap {%- endcomment -%}
             {%- assign _ws_drawer_menu = listmenu -%}
-            {%- if settings.wholesale_gate_enabled and settings.wholesale_menu_filter_enabled -%}
-              {%- assign _ws_drawer_tag = settings.wholesale_customer_tag | default: 'W1' | strip -%}
-              {%- assign _ws_drawer_tag2 = settings.wholesale_customer_tag_2 | default: '' | strip -%}
+            {%- assign _ws_drawer_restricted_ok = false -%}
+            {%- assign _ws_drawer_restricted_handles = settings.wholesale_restricted_menu_handles | default: '' | strip | split: ',' -%}
+            {%- assign _ws_drawer_restricted_tags = settings.wholesale_restricted_menu_tags | default: '' | strip | split: ',' -%}
+            {%- if settings.wholesale_gate_enabled -%}
+              {%- assign _ws_drawer_tags = settings.wholesale_customer_tag | default: 'W1' | strip | split: ',' -%}
               {%- assign _ws_drawer_is_wholesale = false -%}
               {%- if customer -%}
                 {%- for _dt in customer.tags -%}
-                  {%- if _dt == _ws_drawer_tag or (_ws_drawer_tag2 != blank and _dt == _ws_drawer_tag2) -%}{%- assign _ws_drawer_is_wholesale = true -%}{%- break -%}{%- endif -%}
+                  {%- if _ws_drawer_tags contains _dt -%}{%- assign _ws_drawer_is_wholesale = true -%}{%- endif -%}
+                  {%- if _ws_drawer_restricted_tags contains _dt -%}{%- assign _ws_drawer_restricted_ok = true -%}{%- endif -%}
                 {%- endfor -%}
               {%- endif -%}
-              {%- if _ws_drawer_is_wholesale and settings.wholesale_wholesale_menu != blank -%}
-                {%- assign _ws_drawer_menu = linklists[settings.wholesale_wholesale_menu].links -%}
-              {%- elsif _ws_drawer_is_wholesale == false and settings.wholesale_retail_menu != blank -%}
-                {%- assign _ws_drawer_menu = linklists[settings.wholesale_retail_menu].links -%}
+              {%- if settings.wholesale_menu_filter_enabled -%}
+                {%- if _ws_drawer_is_wholesale and settings.wholesale_wholesale_menu != blank -%}
+                  {%- assign _ws_drawer_menu = linklists[settings.wholesale_wholesale_menu].links -%}
+                {%- elsif _ws_drawer_is_wholesale == false and settings.wholesale_retail_menu != blank -%}
+                  {%- assign _ws_drawer_menu = linklists[settings.wholesale_retail_menu].links -%}
+                {%- endif -%}
               {%- endif -%}
             {%- endif -%}
 
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
               {%- for link in _ws_drawer_menu -%}
+                {%- if _ws_drawer_restricted_handles contains link.handle and _ws_drawer_restricted_ok == false -%}{%- continue -%}{%- endif -%}
                 <menu-drawer class="menu-drawer__list-item" style="--menu-drawer-animation-index: {{ forloop.index }};">
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">

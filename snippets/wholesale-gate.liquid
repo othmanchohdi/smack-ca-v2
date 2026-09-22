@@ -11,15 +11,14 @@
 
 {%- if settings.wholesale_gate_enabled -%}
 
-  {%- comment -%} Resolve the wholesale customer tag from settings {%- endcomment -%}
-  {%- assign _ws_tag = settings.wholesale_customer_tag | default: 'W1' | strip -%}
-  {%- assign _ws_tag2 = settings.wholesale_customer_tag_2 | default: '' | strip -%}
+  {%- comment -%} Resolve the wholesale customer tag(s) from settings {%- endcomment -%}
+  {%- assign _ws_tags = settings.wholesale_customer_tag | default: 'W1' | strip | split: ',' -%}
 
-  {%- comment -%} Check if the logged-in customer carries the wholesale tag {%- endcomment -%}
+  {%- comment -%} Check if the logged-in customer carries any wholesale tag {%- endcomment -%}
   {%- assign _ws_customer = false -%}
   {%- if customer -%}
     {%- for _t in customer.tags -%}
-      {%- if _t == _ws_tag or (_ws_tag2 != blank and _t == _ws_tag2) -%}
+      {%- if _ws_tags contains _t -%}
         {%- assign _ws_customer = true -%}
         {%- break -%}
       {%- endif -%}

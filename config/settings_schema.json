@@ -87,15 +87,9 @@
     {
       "type": "text",
       "id": "wholesale_customer_tag",
-      "label": "Wholesale customer tag",
+      "label": "Wholesale customer tag(s)",
       "default": "W1",
-      "info": "The Shopify customer tag that identifies wholesale buyers"
-    },
-    {
-      "type": "text",
-      "id": "wholesale_customer_tag_2",
-      "label": "Wholesale customer tag (secondary)",
-      "info": "Optional second Shopify customer tag treated identically to the tag above (e.g. a second wholesale program). Leave blank if not needed."
+      "info": "Comma-separated Shopify customer tags that identify wholesale buyers, no spaces (e.g. W1,BB,Bone&Biscuit). A customer carrying any one of these tags is treated as wholesale everywhere on the site."
     },
     {
       "type": "url",
@@ -353,6 +347,20 @@
       "id": "wholesale_wholesale_menu",
       "label": "Wholesale customer navigation menu",
       "info": "Shown instead when the customer has the wholesale tag. Leave blank to use the header's default menu."
+    },
+    {
+      "type": "text",
+      "id": "wholesale_restricted_menu_handles",
+      "label": "Top-level menu handles restricted to specific tags",
+      "info": "Comma-separated menu handles, no spaces (e.g. b-b-co-wholesale). Hidden from everyone — guests, retail, and other wholesale customers — except customers who carry one of the tags below. Applies to whichever menu (default or swapped) is being shown.",
+      "default": "b-b-co-wholesale"
+    },
+    {
+      "type": "text",
+      "id": "wholesale_restricted_menu_tags",
+      "label": "Tags required to see the restricted menu handles above",
+      "info": "Comma-separated Shopify customer tags, no spaces (e.g. BB,Bone&Biscuit). A customer with any one of these tags can see the restricted menu handles.",
+      "default": "BB,Bone&Biscuit"
     },
     {
       "type": "header",

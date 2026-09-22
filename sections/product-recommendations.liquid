@@ -106,8 +106,11 @@
           endif
         %}
         {% assign is_wholesale_customer = false %}
-        {% if settings.wholesale_gate_enabled and customer and (customer.tags contains settings.wholesale_customer_tag or (settings.wholesale_customer_tag_2 != blank and customer.tags contains settings.wholesale_customer_tag_2)) %}
-          {% assign is_wholesale_customer = true %}
+        {% if settings.wholesale_gate_enabled and customer %}
+          {% assign _ws_tags = settings.wholesale_customer_tag | default: 'W1' | strip | split: ',' %}
+          {% for _t in customer.tags %}
+            {% if _ws_tags contains _t %}{% assign is_wholesale_customer = true %}{% break %}{% endif %}
+          {% endfor %}
         {% endif %}
 
         {% capture list_items %}

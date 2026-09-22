@@ -9,13 +9,12 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/Logo.png",
+    "logo": "shopify://shop_images/Logo.avif",
     "logo_inverse": "",
     "favicon": "shopify://shop_images/Favicon.webp",
     "wholesale_redirect_url": "/pages/how-to-order",
     "wholesale_gate_home_enabled": true,
-    "wholesale_customer_tag": "W1",
-    "wholesale_customer_tag_2": "BB",
+    "wholesale_customer_tag": "W1,BB,Bone&Biscuit",
     "wholesale_product_tag": "W1",
     "wholesale_gated_col_1": "wholesale-cat-2",
     "wholesale_gated_col_2": "wholesale-dog",
@@ -32,7 +31,9 @@
     "wholesale_gated_page_1": "",
     "wholesale_retail_page_1": "",
     "wholesale_retail_menu": "",
-    "wholesale_wholesale_menu": "v2-b2b-main-menu",
+    "wholesale_wholesale_menu": "b2b-menu",
+    "wholesale_restricted_menu_handles": "b-b-co-wholesale",
+    "wholesale_restricted_menu_tags": "BB,Bone&Biscuit",
     "sale_badge_color": "#ffffff",
     "sale_badge_background": "#d62828",
     "type_body_font": "jost_n5",
@@ -286,11 +287,6 @@
           "signup_success_message": "You're in! Start exploring your rewards."
         }
       },
-      "6478312753674380289": {
-        "type": "shopify://apps/gempages-builder/blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3",
-        "disabled": false,
-        "settings": {}
-      },
       "7570552984445421165": {
         "type": "shopify://apps/yotpo-product-photo-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
         "disabled": false,
@@ -321,11 +317,6 @@
           "fast_load": false
         }
       },
-      "8669066016853369741": {
-        "type": "shopify://apps/hotjar-install/blocks/global/2903e4ea-7615-463e-8b60-582f487dac4f",
-        "disabled": false,
-        "settings": {}
-      },
       "9431864395560886015": {
         "type": "shopify://apps/polar-analytics/blocks/polar-tracker/019c2e93-19fa-7dab-8368-903d1c54902c",
         "disabled": false,
@@ -349,9 +340,9 @@
           "mobile_bottom_margin": 46
         }
       },
-      "17824471530847535147": {
-        "type": "shopify://apps/accessibe-widget/blocks/accessiBe/149b77a2-0170-42f6-9355-0bef39587b09",
-        "disabled": false,
+      "6478312753674380289": {
+        "type": "shopify://apps/gempages-builder/blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3",
+        "disabled": true,
         "settings": {}
       },
       "5149645339031002760": {

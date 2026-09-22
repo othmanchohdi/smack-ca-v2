@@ -2,12 +2,30 @@
   assign bl_stts = block.settings
   assign menu = bl_stts.menu
 
+  assign _ws_block_tags = settings.wholesale_customer_tag | default: 'W1' | strip | split: ','
   assign is_wholesale_customer = false
-  if settings.wholesale_gate_enabled and customer and (customer.tags contains settings.wholesale_customer_tag or (settings.wholesale_customer_tag_2 != blank and customer.tags contains settings.wholesale_customer_tag_2))
-    assign is_wholesale_customer = true
+  if settings.wholesale_gate_enabled and customer
+    for _bt in customer.tags
+      if _ws_block_tags contains _bt
+        assign is_wholesale_customer = true
+        break
+      endif
+    endfor
   endif
   if is_wholesale_customer and bl_stts.wholesale_menu != blank
     assign menu = bl_stts.wholesale_menu
+  endif
+
+  assign _ws_block_restricted_ok = false
+  assign _ws_block_restricted_handles = settings.wholesale_restricted_menu_handles | default: '' | strip | split: ','
+  assign _ws_block_restricted_tags = settings.wholesale_restricted_menu_tags | default: '' | strip | split: ','
+  if customer
+    for _rt in customer.tags
+      if _ws_block_restricted_tags contains _rt
+        assign _ws_block_restricted_ok = true
+        break
+      endif
+    endfor
   endif
 
   assign heading = bl_stts.heading
@@ -110,6 +128,7 @@
             "
           >
             {% for link in menu.links %}
+              {% if _ws_block_restricted_handles contains link.handle and _ws_block_restricted_ok == false %}{% continue %}{% endif %}
               <li class="menu__item">
                 <a href="{{ link.url }}"class="link link--hover-underline">
                   <span class="link__text {{ details_content_classes }}" style="{% if bl_stts.details_content_preset == 'custom' %}{% render 'typography-style', preset: 'custom', font_size: bl_stts.details_content_font_size, font: bl_stts.details_content_font, weight: bl_stts.details_content_weight, line_height: bl_stts.details_content_line_height, letter_spacing: bl_stts.details_content_letter_spacing, case: bl_stts.details_content_case, wrap: bl_stts.details_content_wrap %}{% endif %}">{{ link.title }}</span>

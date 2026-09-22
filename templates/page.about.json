@@ -52,7 +52,6 @@
             "scheme_shadow": "#000000",
             "background_media": "none",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/Content_Cards_V1_1.png",
             "ab_test_enabled": false,
             "background_image_position": "cover",
             "content_overlay": false,
@@ -341,7 +340,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Rectangle_30_1_50622b18-bf0a-40ad-928e-e3a96bdb7799.png",
+                    "image": "shopify://shop_images/Rectangle_30_1_50622b18-bf0a-40ad-928e-e3a96bdb7799.webp",
                     "link": "",
                     "hide_on_mobile": true,
                     "hide_on_desktop": false,
@@ -1192,8 +1191,6 @@
             "container": "page-width page-width--full",
             "height": "full",
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/Container_2.png",
-            "image_mb_1": "shopify://shop_images/Rectangle_12.png",
             "ab_test_enabled": false,
             "inherit_color_scheme": true,
             "scheme_background": "#ffffff",
@@ -1466,6 +1463,7 @@
       ],
       "name": "t:names.slideshow",
       "settings": {
+        "hide_for_wholesale": false,
         "slideshow_type": "default",
         "enable_multi_level_category": false,
         "section_width": "page-width",
@@ -1936,7 +1934,6 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Ariel-1_1_2.png",
                     "link": "",
                     "hide_on_mobile": false,
                     "hide_on_desktop": false,
@@ -2326,7 +2323,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Zorro.jpg",
+                    "image": "shopify://shop_images/Zorro_fbc1e0ae-3007-4fb4-9af9-ded379f8d01a.webp",
                     "link": "",
                     "hide_on_mobile": false,
                     "hide_on_desktop": false,
@@ -2612,7 +2609,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/IMG_5867.png",
+                    "image": "shopify://shop_images/IMG_5867.webp",
                     "link": "",
                     "hide_on_mobile": false,
                     "hide_on_desktop": false,
@@ -2898,7 +2895,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/First_Manufacturing_Facility.png",
+                    "image": "shopify://shop_images/First_Manufacturing_Facility.webp",
                     "link": "",
                     "hide_on_mobile": false,
                     "hide_on_desktop": false,
@@ -3184,7 +3181,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Growing_Across_Canada.png",
+                    "image": "shopify://shop_images/Growing_Across_Canada.webp",
                     "link": "",
                     "hide_on_mobile": false,
                     "hide_on_desktop": false,
@@ -3470,7 +3467,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/image_12.png",
+                    "image": "shopify://shop_images/image_12.webp",
                     "link": "",
                     "hide_on_mobile": false,
                     "hide_on_desktop": false,
@@ -3756,7 +3753,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Inspired_by_Zorro.jpg",
+                    "image": "shopify://shop_images/Inspired_by_Zorro.webp",
                     "link": "",
                     "hide_on_mobile": false,
                     "hide_on_desktop": false,
@@ -3937,7 +3934,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/CSF_KitchenLifestyle_Waffles_1.png",
+                "image": "shopify://shop_images/CSF_KitchenLifestyle_Waffles_1.webp",
                 "link": "",
                 "hide_on_mobile": false,
                 "hide_on_desktop": false,
@@ -3974,7 +3971,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/CSF_KitchenLifestyle_Waffles_2.png",
+                "image": "shopify://shop_images/CSF_KitchenLifestyle_Waffles_2.webp",
                 "link": "",
                 "hide_on_mobile": false,
                 "hide_on_desktop": false,
@@ -4011,7 +4008,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/CSF_KitchenLifestyle_Waffles_3.png",
+                "image": "shopify://shop_images/CSF_KitchenLifestyle_Waffles_3.webp",
                 "link": "",
                 "hide_on_mobile": false,
                 "hide_on_desktop": false,
