@@ -909,8 +909,8 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "menu": "",
-                    "wholesale_menu": "",
+                    "menu": "top-bar",
+                    "wholesale_menu": "b2b-menu",
                     "heading": "Shop",
                     "margin-block-end": 10,
                     "content_direction": "column",
@@ -1038,7 +1038,7 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "menu": "",
+                    "menu": "info",
                     "wholesale_menu": "",
                     "heading": "Learn",
                     "margin-block-end": 10,
@@ -1167,7 +1167,7 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "menu": "",
+                    "menu": "footer",
                     "wholesale_menu": "",
                     "heading": "Support",
                     "margin-block-end": 10,
