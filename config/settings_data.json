@@ -290,11 +290,6 @@
           "signup_success_message": "You're in! Start exploring your rewards."
         }
       },
-      "6478312753674380289": {
-        "type": "shopify://apps/gempages-builder/blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3",
-        "disabled": false,
-        "settings": {}
-      },
       "7570552984445421165": {
         "type": "shopify://apps/yotpo-product-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
         "disabled": false,
@@ -347,6 +342,11 @@
           "mobile_side_margin": 16,
           "mobile_bottom_margin": 46
         }
+      },
+      "6478312753674380289": {
+        "type": "shopify://apps/gempages-builder/blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3",
+        "disabled": true,
+        "settings": {}
       }
     },
     "color_schemes": {
