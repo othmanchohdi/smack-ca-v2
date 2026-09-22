@@ -9,16 +9,6 @@
  */
 {
   "sections": {
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "disabled": true,
-      "settings": {}
-    },
-    "shogun-above": {
-      "type": "shogun-above",
-      "disabled": true,
-      "settings": {}
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -2151,26 +2141,12 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
-    },
-    "shogun-below": {
-      "type": "shogun-below",
-      "disabled": true,
-      "settings": {}
-    },
-    "shogun-optimizer": {
-      "type": "shogun-optimizer",
-      "disabled": true,
-      "settings": {}
     }
   },
   "order": [
-    "shogun-helper",
-    "shogun-above",
     "main",
     "product_recommendations_BUq6TH",
     "1782127932ee1954c3",
-    "faq_product_wUEGiF",
-    "shogun-below",
-    "shogun-optimizer"
+    "faq_product_wUEGiF"
   ]
 }
