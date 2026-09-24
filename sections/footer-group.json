@@ -909,8 +909,8 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "menu": "top-bar",
-                    "wholesale_menu": "b2b-menu",
+                    "menu": "footer-shop",
+                    "wholesale_menu": "",
                     "heading": "Shop",
                     "margin-block-end": 10,
                     "content_direction": "column",
