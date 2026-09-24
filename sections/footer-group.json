@@ -1296,7 +1296,7 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "menu": "",
+                    "menu": "company-footer",
                     "wholesale_menu": "",
                     "heading": "Company",
                     "margin-block-end": 10,
