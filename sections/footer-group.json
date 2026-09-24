@@ -1167,7 +1167,7 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "menu": "footer",
+                    "menu": "support-footer",
                     "wholesale_menu": "",
                     "heading": "Support",
                     "margin-block-end": 10,
