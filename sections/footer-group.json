@@ -1038,7 +1038,7 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "menu": "info",
+                    "menu": "learn-footer",
                     "wholesale_menu": "",
                     "heading": "Learn",
                     "margin-block-end": 10,
