@@ -452,7 +452,7 @@
               "type": "_product-description",
               "name": "t:names.product_description",
               "settings": {
-                "text": "{{ closest.product.description }}",
+                "text": "{{ closest.product.metafields.custom.product_description | metafield_tag }}",
                 "width": "fit-content",
                 "max_width": "normal",
                 "truncate_type": "none",
