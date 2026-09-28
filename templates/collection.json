@@ -921,7 +921,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h1>{{ closest.collection.title }}</h1>",
+                "text": "<p>{{ closest.collection.metafields.my_fields.hero_title.value }}</p>",
                 "collection_description_only": false,
                 "collapse_text": false,
                 "typing_text": false,
@@ -929,7 +929,7 @@
                 "secondary_text": "Exclusive offers just for you.",
                 "third_text": "Shop now and enjoy deals!",
                 "highlight_text": true,
-                "highlight_text_content": "{{ closest.collection.title }}",
+                "highlight_text_content": "{{ closest.collection.metafields.my_fields.hero_title.value }}",
                 "highlight_text_type": "text",
                 "underline_width": 100,
                 "underline_height": 18,
