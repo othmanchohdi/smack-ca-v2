@@ -1167,8 +1167,8 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "menu": "support-footer",
-                    "wholesale_menu": "",
+                    "menu": "dtc-support-footer",
+                    "wholesale_menu": "support-footer",
                     "heading": "Support",
                     "margin-block-end": 10,
                     "content_direction": "column",
@@ -1296,8 +1296,8 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "menu": "dtc-support-footer",
-                    "wholesale_menu": "support-footer",
+                    "menu": "company-footer",
+                    "wholesale_menu": "",
                     "heading": "Company",
                     "margin-block-end": 10,
                     "content_direction": "column",
