@@ -3303,7 +3303,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>2025 — U.S. EXPANSION</p>",
+                    "text": "<p>2025 — UNITED STATES EXPANSION</p>",
                     "collection_description_only": false,
                     "collapse_text": false,
                     "typing_text": false,
@@ -3385,7 +3385,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Our second manufacturing facility<br/>in Aberdeen, South Dakota marks<br/>an important growth milestone,<br/>supporting U.S. operations, faster<br/>order fulfillment, and stronger<br/>service for retailers and pet<br/>parents.</p>",
+                    "text": "<p>Our second manufacturing facility<br/>in Aberdeen, South Dakota marks<br/>an important growth milestone,<br/>supporting United states operations, faster<br/>order fulfillment, and stronger<br/>service for retailers and pet<br/>parents.</p>",
                     "collection_description_only": false,
                     "collapse_text": false,
                     "typing_text": false,
