@@ -285,7 +285,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Real food your pet will go wild for. No freezer. No thawing. No mystery ingredients. Just scoop, serve, and watch every meal become their new favorite meal.</p>",
+                    "text": "<p>Real food your pet will go wild for. No freezer. No thawing. No mystery ingredients. Just scoop, serve, and watch every meal become their new favourite meal.</p>",
                     "collection_description_only": false,
                     "collapse_text": false,
                     "typing_text": false,
