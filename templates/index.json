@@ -9618,7 +9618,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "See our superfood ingredients →",
-                "link": "shopify://pages/our-superfood-ingredients",
+                "link": "shopify://pages/superfood-ingredients",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "button_style": "default",
