@@ -1296,8 +1296,8 @@
                   "type": "menu",
                   "name": "Menu",
                   "settings": {
-                    "menu": "company-footer",
-                    "wholesale_menu": "",
+                    "menu": "dtc-support-footer",
+                    "wholesale_menu": "support-footer",
                     "heading": "Company",
                     "margin-block-end": 10,
                     "content_direction": "column",
