@@ -3671,7 +3671,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Still proudly family-owned and<br/>growing, Smack serves pet parents<br/>directly through our online store,<br/>partners with more than 2,500<br/>retailers across North America, and<br/>is available in Canada, the USA,<br/>South Korea, Hong Kong, Taiwan,<br/>and Singapore.</p>",
+                    "text": "<p>Still proudly family-owned and<br/>growing, Smack serves pet parents<br/>directly through our online store,<br/>partners with more than 2,500<br/>retailers across North America, and<br/>is available in Canada, the United States,<br/>South Korea, Hong Kong, Taiwan,<br/>and Singapore.</p>",
                     "collection_description_only": false,
                     "collapse_text": false,
                     "typing_text": false,
