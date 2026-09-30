@@ -1169,7 +1169,7 @@
                         "text_MDJDM7": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Please reach out to us via email <a href=\"mailto:customercare@smackpetfood.com\">customercare@smackpetfood.com</a> or phone us to register. Once qualified, you will be provided with all information to get started including our web portal for ordering along with support materials for your store and social media!</p>",
+                            "text": "<p>Please reach out to us via email&nbsp;<a href=\"mailto:customercare@smackpetfood.com\">customercare@smackpetfood.com</a>&nbsp;or phone us to register. Once qualified, you will be provided with all information to get started including our web portal for ordering along with support materials for your store and social media!</p>",
                             "collection_description_only": false,
                             "collapse_text": false,
                             "typing_text": false,
@@ -1283,7 +1283,7 @@
                         "text_w7DX8h": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>We have brick and mortar stores as well as breeders, groomers and veterinary/holistic clinics all partnered with us to sell Smack. We require your company name with complete address and ZIP Code, phone number, primary contact person and email address for account login, along with your Business Number and/or State Tax ID (and kennel registration for breeders).</p>",
+                            "text": "<p>We have brick and mortar stores as well as breeders, groomers and veterinary/holistic clinics all partnered with us to sell Smack. We require your company name with complete address and postal code, phone number, primary contact person and email address for account login, along with your Business Number (and kennel registration for breeders).</p>",
                             "collection_description_only": false,
                             "collapse_text": false,
                             "typing_text": false,
@@ -1397,7 +1397,7 @@
                         "text_QciYUw": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Place your order using the online order form and checkout using credit card.</p>",
+                            "text": "<p>Yes - after adding items to your order, click 'Generate PO' and provide your email to generate a PDF of the purchase order. Once complete, please submit a copy of the PO to <a href=\"mailto:customercare@smackpetfood.com\"><span style=\"text-decoration:underline\">customercare@smackpetfood.com</span></a></p>",
                             "collection_description_only": false,
                             "collapse_text": false,
                             "typing_text": false,
@@ -1511,7 +1511,7 @@
                         "text_HQKcHj": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>No - we do orders by the case-lot. Please see the order form to make a purchase.</p>",
+                            "text": "<p>No - we do orders by the case-lot. Please see the order form to make a purchase.&nbsp;</p>",
                             "collection_description_only": false,
                             "collapse_text": false,
                             "typing_text": false,
