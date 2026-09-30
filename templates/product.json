@@ -2119,7 +2119,10 @@
       "block_order": [
         "yotpo_product_reviews_reviews_CL6Xkx"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".embedded-promoted-products {display: none !important;}",
+        " {padding-top:55px;}"
+      ],
       "settings": {
         "include_margins": true
       }
