@@ -11,18 +11,18 @@
   assign us_url = 'https://www.smackpetfood.com/'
   assign ca_url = 'https://ca.smackpetfood.com/'
 
-  assign current_flag = '🇺🇸'
-  assign current_name = 'United States'
-  assign other_flag = '🇨🇦'
-  assign other_name = 'Canada'
-  assign other_url = ca_url
+  assign current_flag = '🇨🇦'
+  assign current_name = 'Canada'
+  assign other_flag = '🇺🇸'
+  assign other_name = 'United States'
+  assign other_url = us_url
 
-  if current_host == ca_host
-    assign current_flag = '🇨🇦'
-    assign current_name = 'Canada'
-    assign other_flag = '🇺🇸'
-    assign other_name = 'United States'
-    assign other_url = us_url
+  if current_host == us_host
+    assign current_flag = '🇺🇸'
+    assign current_name = 'United States'
+    assign other_flag = '🇨🇦'
+    assign other_name = 'Canada'
+    assign other_url = ca_url
   endif
 -%}
 
