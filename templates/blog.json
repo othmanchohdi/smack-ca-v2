@@ -125,9 +125,9 @@
               "type": "_blog-post-info-text",
               "static": true,
               "settings": {
-                "show_date": true,
+                "show_date": false,
                 "show_author": false,
-                "show_comments": true,
+                "show_comments": false,
                 "type_preset": "",
                 "alignment": "left",
                 "show_alignment": true,
